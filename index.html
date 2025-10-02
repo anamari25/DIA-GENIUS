@@ -98,6 +98,39 @@
       padding: 20px;
       margin-top: 30px;
     }
+    .galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.galeria .item {
+  text-align: center;
+  background: #f8fff8;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 8px;
+  margin: 5px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.galeria p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #2e8b57;
+  font-weight: bold;
+}
 
     ul {
       list-style: disc;
@@ -125,6 +158,7 @@
     <a onclick="mostrarSeccion('que-es')">¿Qué es Dia-Genius?</a>
     <a onclick="mostrarSeccion('como-funciona')">¿Cómo funciona?</a>
     <a onclick="mostrarSeccion('prototipo')">Prototipo</a>
+    <a onclick="mostrarSeccion('marketing')">Marketing</a>
     <a onclick="mostrarSeccion('beneficios')">Beneficios</a>
     <a onclick="mostrarSeccion('contacto')">Contáctanos</a>
   </nav>
@@ -273,6 +307,55 @@ Creemos firmemente que la innovación no debe ser un privilegio, sino una herram
     <p><em>APPque controla el sistema de riego Dia-Genius</em></p>
   </div>
 </section>
+<section id="marketing">
+  <h2>Marketing</h2>
+  <div class="resaltado">
+    <p>Nuestro proyecto no solo es tecnología, también es comunicación. Aquí encontrarás los folletos, tarjetas, infografía, volante y catálogo de <strong>DIA-GENIUS</strong>.</p>
+  </div>
+
+  <div class="galeria">
+    <!-- Folleto (2 imágenes) -->
+    <div class="item">
+      <img src="1.png" alt="Folleto página 1">
+      <img src="2.png" alt="Folleto página 2">
+      <p>Folleto informativo de Dia-Genius</p>
+    </div>
+
+    <!-- Tarjetas (5 imágenes) -->
+    <div class="item">
+      <img src="0f583b2a-791d-47aa-859.jpeg" alt="Tarjeta 1">
+      <img src="3b4e2bca-6e62-4166-88e0-3ea6993.jpeg" alt="Tarjeta 2">
+      <img src="de40fcc3-3fc9-4808-af6a-0ea4fac.jpeg" alt="Tarjeta 3">
+      <img src="c2060133-a6fe-4a07-8a22.jpeg" alt="Tarjeta 4">
+      <img src="d9bc2ced-8d7e-4305-a524-2351bf88.jpeg" alt="Tarjeta 5">
+      <p>Tarjetas de presentación</p>
+    </div>
+
+    <!-- Volante -->
+    <div class="item">
+      <img src="volante DIA-GENIUS.png" alt="Volante">
+      <p>Volante promocional</p>
+    </div>
+
+    <!-- Infografía -->
+    <div class="item">
+      <img src="INFOGRAFIA DIA-GENIUS.jpg" alt="Infografía">
+      <p>Infografía de Dia-Genius</p>
+    </div>
+
+    <!-- Catálogo (5 páginas) -->
+    <div class="item">
+      <img src="uno.png" alt="Catálogo 1">
+      <img src="dos.png" alt="Catálogo 2">
+      <img src="3.png" alt="Catálogo 3">
+      <img src="4.png" alt="Catálogo 4">
+      <img src="5.png" alt="Catálogo 5">
+      <p>Catálogo de productos</p>
+    </div>
+  </div>
+</section>
+
+
 
 
  <section id="beneficios">
